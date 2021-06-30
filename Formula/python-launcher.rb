@@ -6,6 +6,12 @@ class PythonLauncher < Formula
   license "MIT"
   head "https://github.com/brettcannon/python-launcher.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/messense/homebrew-tap/releases/download/python-launcher-0.17.0"
+    sha256 cellar: :any_skip_relocation, catalina:     "cc7d65bf26bfbebf6ddec5cce77d422f2ea790111dcceaf02889fa13961a80b8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "a4cc90e939da69d92d809bfbc1c2660e4cdd0d53931f8c95484c7f0e9e667828"
+  end
+
   depends_on "rust" => :build
   depends_on "python@3.9" => :test
 
