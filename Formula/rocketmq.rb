@@ -6,6 +6,12 @@ class Rocketmq < Formula
   sha256 "d13416f9e80f5d4414300fbf84518a22476e7e298d19c6b8d21c7e99c4599065"
   license "Apache-2.0"
 
+  bottle do
+    root_url "https://github.com/messense/homebrew-tap/releases/download/rocketmq-4.9.0"
+    sha256 cellar: :any_skip_relocation, catalina:     "f9f81756e8e774d16730bb4319586449b7c0e13d768bac38233592aa4cac88b8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "b4ceb6b3aa640e8ce73a3b9866f845c1f02f7d98b46cb9340481cddbdee2f118"
+  end
+
   depends_on "openjdk"
 
   resource "netty-all" do
