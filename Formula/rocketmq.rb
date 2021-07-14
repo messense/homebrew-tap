@@ -33,7 +33,7 @@ class Rocketmq < Formula
         "export CLASSPATH=.:${BASE_DIR}/lib/*:${BASE_DIR}/conf:${CLASSPATH}"
       s.gsub! "JAVA_OPT=\"${JAVA_OPT} -Djava.ext.dirs", "#JAVA_OPT=\"${JAVA_OPT} -Djava.ext.dirs"
       s.gsub! "JAVA_OPT=\"${JAVA_OPT} -verbose:gc -Xloggc:${GC_LOG_DIR}/rmq_broker_gc_%p_%t.log -XX:+PrintGCDetails" \
-        " -XX:+PrintGCDateStamps -XX:+PrintGCApplicationStoppedTime -XX:+PrintAdaptiveSizePolicy\"", ""
+              " -XX:+PrintGCDateStamps -XX:+PrintGCApplicationStoppedTime -XX:+PrintAdaptiveSizePolicy\"", ""
       s.gsub! "JAVA_OPT=\"${JAVA_OPT} -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=30m\"", ""
       s.gsub! "JAVA_OPT=\"${JAVA_OPT} -XX:-UseLargePages -XX:-UseBiasedLocking\"",
         "JAVA_OPT=\"${JAVA_OPT} -XX:-UseLargePages\""
@@ -125,14 +125,14 @@ class Rocketmq < Formula
     begin
       fork do
         exec "#{bin}/mqnamesrv " \
-          "> #{testpath}/test.mqnamesrv.log 2>&1"
+             "> #{testpath}/test.mqnamesrv.log 2>&1"
       end
 
       sleep 10
 
       fork do
         exec "#{bin}/mqbroker -n localhost:9876 "\
-          "> #{testpath}/test.mqbroker.log 2>&1"
+             "> #{testpath}/test.mqbroker.log 2>&1"
       end
 
       sleep 10
