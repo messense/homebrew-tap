@@ -6,6 +6,12 @@ class Ttfb < Formula
   license "MIT"
   head "https://github.com/phip1611/ttfb.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/messense/homebrew-tap/releases/download/ttfb-1.1.0"
+    sha256 cellar: :any_skip_relocation, catalina:     "67a049e29e685f952314ab301cb3bb77bff757354dd50a77c78ae4a12126c238"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "51b845f87cdcd5817a8c662a3623e1d52bec01365f77ccac96b49f050010767a"
+  end
+
   depends_on "rust" => :build
   depends_on "openssl@1.1"
 
