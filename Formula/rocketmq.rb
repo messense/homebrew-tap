@@ -8,8 +8,9 @@ class Rocketmq < Formula
 
   bottle do
     root_url "https://github.com/messense/homebrew-tap/releases/download/rocketmq-4.9.0"
-    sha256 cellar: :any_skip_relocation, catalina:     "f9f81756e8e774d16730bb4319586449b7c0e13d768bac38233592aa4cac88b8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "b4ceb6b3aa640e8ce73a3b9866f845c1f02f7d98b46cb9340481cddbdee2f118"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina:     "dc0dda5ebccd5ff1260893791325c8cfab2ad3896f82ca4927f94575220fbb1c"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "44044fc5703a4af3ffffd935dcce9f6eb86118055c4e8af6b5886078f0932d1c"
   end
 
   depends_on "openjdk"
