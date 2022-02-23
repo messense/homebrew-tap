@@ -47,14 +47,14 @@ class Rocketmq < Formula
       s.gsub! "JAVA_OPT=\"${JAVA_OPT} -Djava.ext.dirs", "#JAVA_OPT=\"${JAVA_OPT} -Djava.ext.dirs"
     end
 
-    on_macos do
+    if OS.mac?
       # netty-all-4.0.42.Final.jar doesn't work on arm64 macOS
       rm_rf "lib/netty-all-4.0.42.Final.jar"
     end
 
     libexec.install "lib"
 
-    on_macos do
+    if OS.mac?
       # install netty-all-4.1.65.Final.jar which works on arm64 macOS
       resource("netty-all").stage { cp "netty-all-4.1.65.Final.jar", libexec/"lib" }
     end
