@@ -1,8 +1,8 @@
 class Ttfb < Formula
   desc "Library + CLI-Tool to measure the TTFB (time to first byte) of HTTP requests"
   homepage "https://github.com/phip1611/ttfb"
-  url "https://github.com/phip1611/ttfb/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "7a32778707e283d8e3c28541f3ec1f66308e057f52a5598a1a5828687ec97042"
+  url "https://github.com/phip1611/ttfb/archive/refs/tags/v1.3.0.tar.gz"
+  sha256 "8073833b0a7a500617302328620799d04a6fafedead9abed677eb18c0737b543"
   license "MIT"
   head "https://github.com/phip1611/ttfb.git", branch: "main"
 
