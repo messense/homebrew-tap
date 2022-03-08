@@ -6,6 +6,12 @@ class CargoXwin < Formula
   license "MIT"
   head "https://github.com/messense/cargo-xwin.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/messense/homebrew-tap/releases/download/cargo-xwin-0.6.0"
+    sha256 big_sur:      "67cae0d452d5786515d855e7587335f2d8cd03e3a85778610465ff3d523affaa"
+    sha256 x86_64_linux: "7676d1d35b8c9bda2d0bc2ba47734f6627fed426f210493820e0c58aca160743"
+  end
+
   depends_on "rustup-init" => :test
   depends_on "llvm"
   depends_on "rust"
