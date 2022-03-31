@@ -117,9 +117,7 @@ class Rocketmq < Formula
   end
 
   test do
-    on_linux do
-      return if ENV["HOMEBREW_GITHUB_ACTIONS"]
-    end
+    return if OS.linux? && (ENV["HOMEBREW_GITHUB_ACTIONS"])
 
     (testpath/"rocketmq").mkpath
 
