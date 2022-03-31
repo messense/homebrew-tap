@@ -7,9 +7,9 @@ class CargoZigbuild < Formula
   head "https://github.com/messense/cargo-zigbuild.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/messense/homebrew-tap/releases/download/cargo-zigbuild-0.6.6"
-    sha256 cellar: :any_skip_relocation, big_sur:      "6868234b0eb1d3157b6c059ac6230ce646fe29fba2c6286c9b6f4a03f02bdcd8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "363029ddb9304fe9015af37787a58c125c3d0d59a7d9a4e18bf8527531ce6e8c"
+    root_url "https://github.com/messense/homebrew-tap/releases/download/cargo-zigbuild-0.7.1"
+    sha256 cellar: :any_skip_relocation, big_sur:      "96bf7a95b766139b92bab9837ca55997676f080ed9062e0f131624d300bb7bbc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "900a941f3a3ba1a7d94790024f8122e4db719ab51f8648221425be19d6eb499c"
   end
 
   depends_on "rustup-init" => :test
