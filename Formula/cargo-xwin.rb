@@ -7,9 +7,9 @@ class CargoXwin < Formula
   head "https://github.com/messense/cargo-xwin.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/messense/homebrew-tap/releases/download/cargo-xwin-0.7.1"
-    sha256 cellar: :any_skip_relocation, big_sur:      "bd780ee4135fe673fb07d9c609aab93b0aa5a7dff0f60e35f27c7adf4f59f3a9"
-    sha256                               x86_64_linux: "dc7d70fa704a171568416ca440d3849a9a52bd502261a0b2f6a9bd5b297fac80"
+    root_url "https://github.com/messense/homebrew-tap/releases/download/cargo-xwin-0.8.0"
+    sha256 cellar: :any_skip_relocation, big_sur:      "05808f96ff64d40a40ccc988b4ea5640dfa7838a437d738bbc78922295dc1f7c"
+    sha256                               x86_64_linux: "de788220342686b8d6d038138dea8c395871999ab7f52c2d3327e0c4a7ec7a21"
   end
 
   depends_on "rustup-init" => :test
