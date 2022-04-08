@@ -1,8 +1,8 @@
 class CargoXwin < Formula
   desc "Cross compile Cargo project to Windows MSVC target with ease"
   homepage "https://github.com/messense/cargo-xwin"
-  url "https://github.com/messense/cargo-xwin/archive/refs/tags/v0.7.1.tar.gz"
-  sha256 "b7220f2ea9c3e95cd4a239be288b0514805d2f734d87d91aee0d97d786a8b1b0"
+  url "https://github.com/messense/cargo-xwin/archive/refs/tags/v0.8.0.tar.gz"
+  sha256 "0a82b58de22a86a737d1f6087e38bde92448bf4434f178a672b60797cfb25e2e"
   license "MIT"
   head "https://github.com/messense/cargo-xwin.git", branch: "main"
 
